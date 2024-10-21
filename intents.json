@@ -5,42 +5,73 @@
       "patterns": [
         "Hi",
         "Hey",
-        "How are you",
-        "Is anyone there?",
         "Hello",
-        "Good day"
+        "Good morning",
+        "Good evening",
+        "How are you?",
+        "Is anyone there?",
+        "What's up?",
+        "Howdy"
       ],
       "responses": [
-        "Hey :-)",
-        "Hello, thanks for visiting",
-        "Hi there, what can I do for you?",
-        "Hi there, how can I help?"
+        "Hello! How can I assist you today?",
+        "Hi there, what can I help you with?",
+        "Hey! I'm here to assist you.",
+        "Hi! What can I do for you today?",
+        "Good day! How can I make your day better?"
       ]
     },
     {
       "tag": "goodbye",
-      "patterns": ["Bye", "See you later", "Goodbye"],
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye",
+        "Talk to you later",
+        "I'm leaving",
+        "Catch you later"
+      ],
       "responses": [
-        "See you later, thanks for visiting",
-        "Have a nice day",
-        "Bye! Come back again soon."
+        "Goodbye! Looking forward to our next chat!",
+        "See you soon! Have a great day ahead.",
+        "Bye! Come back anytime if you need help.",
+        "Take care! Feel free to chat with me again.",
+        "Goodbye, thanks for stopping by!"
       ]
     },
     {
       "tag": "thanks",
-      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
-      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "Much appreciated",
+        "That's helpful",
+        "Thank you so much!",
+        "Thanks a lot"
+      ],
+      "responses": [
+        "You're welcome!",
+        "Glad I could help!",
+        "No problem, happy to assist!",
+        "Any time! Let me know if you need more help.",
+        "My pleasure! Don't hesitate to ask if you need anything else."
+      ]
     },
     {
       "tag": "items",
       "patterns": [
-        "How is this chat bot works?",
         "What can you do?",
-        "What do you do?"
+        "Tell me about your features",
+        "How does this chatbot work?",
+        "What tasks can you handle?",
+        "What services do you provide?",
+        "How do you assist?"
       ],
       "responses": [
-        "I can check the train status of IRCTC!",
-        "I can show the details of the trains"
+        "I can help you check IRCTC train status, search train details, provide station information, and more!",
+        "I can assist with checking train schedules, station details, and general inquiries related to trains.",
+        "I provide real-time train information, station details, and train route tracking.",
+        "I help you find trains, track their status, and give information on arrival and departure timings."
       ]
     },
     {
@@ -51,54 +82,70 @@
         "KRMI",
         "MAO",
         "KUDL",
-        "SNDD",
-        "KKW",
-        "VBW",
-        "RAJP",
-        "RN",
-        "SGR",
-        "CHI",
-        "KHED",
-        "MNI",
-        "ROHA",
-        "PNVL",
-        "KJT",
-        "LNL",
-        "PUNE",
-        "STR",
-        "MRJ",
-        "KOP",
-        "DSJ",
-        "GADJ",
-        "JP"
+        "I need train details for MAO",
+        "Train availability for SNDD",
+        "Show me trains from LNL to PNVL",
+        "Find trains arriving at KJT",
+        "Are there trains between PUNE and STR?"
       ],
       "responses": [
-        "We accept VISA, Mastercard and Paypal",
-        "We accept most major credit cards, and Paypal"
+        "Here are the available trains for the route you're looking for:",
+        "I found some trains for your route. Please check the details:",
+        "Here is the schedule for the trains departing from the selected station.",
+        "Train details from LNL to PNVL: ..."
       ]
     },
     {
       "tag": "trains",
       "patterns": [
-        "need to check train from source to destination station",
-        "arrival time and departure time of the train",
-        "coach details of the train"
+        "I need to check train status",
+        "Please show me trains from source to destination",
+        "Find me trains between two stations",
+        "What are the arrival and departure times of the train?",
+        "Can you show me the train coach details?",
+        "Train running status for today",
+        "What time does the train leave?",
+        "What platform will my train arrive on?"
       ],
       "responses": [
-        ".....",
-        "...."
+        "Here are the details for the train, including its departure and arrival times:...",
+        "The train from your source station is scheduled to arrive at... and depart at...",
+        "Train coach details: .... Please verify your ticket for the exact coach number.",
+        "The train running status is currently: On time/Delayed",
+        "Platform information will be available closer to the time of arrival."
       ]
     },
     {
       "tag": "funny",
       "patterns": [
         "Tell me a joke!",
-        "Tell me something funny!",
-        "Do you know a joke?"
+        "Make me laugh",
+        "Do you know any jokes?",
+        "Say something funny!",
+        "Can you tell me a funny story?"
       ],
       "responses": [
-        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
-        "What did the buffalo say when his son left for college? Bison."
+        "Why don't scientists trust atoms? Because they make up everything!",
+        "I told my computer I needed a break, and now it's on vacation mode!",
+        "Why did the bicycle fall over? Because it was two-tired.",
+        "What do you call fake spaghetti? An impasta!",
+        "I'm reading a book about anti-gravity. It's impossible to put down!"
+      ]
+    },
+    {
+      "tag": "payments",
+      "patterns": [
+        "How can I pay?",
+        "What payment methods do you accept?",
+        "Do you accept credit cards?",
+        "Can I pay with PayPal?",
+        "What are the available payment options?"
+      ],
+      "responses": [
+        "We accept major credit cards like VISA and Mastercard, as well as PayPal.",
+        "You can pay using VISA, Mastercard, or PayPal.",
+        "Our payment options include credit cards (VISA, Mastercard) and PayPal.",
+        "You can securely make payments via PayPal or credit cards."
       ]
     }
   ]

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+        }
+        .chat-box {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        .chat-history {
+            height: 300px;
+            overflow-y: scroll;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            background-color: #fff;
+        }
+        .chat-message {
+            margin: 20px 0;
+        }
+        .chat-message.user {
+            text-align: right;
+        }
+        .chat-message.bot {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-box">
+        <h1>Chatbot</h1>
+        <div class="chat-history" id="chatHistory">
+            {% for message in chat_history %}
+                <div class="chat-message user">
+                    <strong>You:</strong> {{ message.user }}
+                </div>
+                <div class="chat-message bot">
+                    <strong>Bot:</strong> {{ message.bot }}
+                </div>
+            {% endfor %}
+        </div>
+        <form action="/chat" method="post">
+            <input type="text" name="message" placeholder="Type your message here..." required>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <script>
+        // Scroll to the bottom of the chat history
+        const chatHistory = document.getElementById("chatHistory");
+        chatHistory.scrollTop = chatHistory.scrollHeight;
+
+        // Add event listener for form submission to auto-scroll
+        document.querySelector('form').addEventListener('submit', function() {
+            setTimeout(() => {
+                chatHistory.scrollTop = chatHistory.scrollHeight;
+            }, 100); // Delay to allow DOM to update
+        });
+    </script>
+</body>
+</html>
